@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dog Similar</title>
+</head>
+<body>
+    <header>
+        <h1>Dog Similar</h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <!-- Styling the label as a button -->
+                <label for="file" class="file-label">
+                    <input type="file" id="file" name="file" accept="image/jpeg, image/png" required>
+                    Choose a dog image
+                </label>
+                <button type="submit" class="upload-button">Upload</button>
+            </form>
+            <div id="display_image" class="image-preview"></div>
+        </section>
+    </main>
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
